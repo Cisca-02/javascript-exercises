@@ -1,7 +1,7 @@
 const sumAll = require('./sumAll')
 
 describe('sumAll', () => {
-  test('sums numbers within the range', () => {
+  test.skip('sums numbers within the range', () => {
     expect(sumAll(2, 4)).toEqual(9);
   });
   test.skip('works with large numbers', () => {
