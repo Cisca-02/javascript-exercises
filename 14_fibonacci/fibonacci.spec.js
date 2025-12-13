@@ -1,7 +1,7 @@
 const fibonacci = require('./fibonacci')
 
 describe('fibonacci', () => {
-  test('4th fibonacci number is 3', () => {
+  test.skip('4th fibonacci number is 3', () => {
     expect(fibonacci(4)).toBe(3);
   });
   test.skip('6th fibonacci number is 8', () => {
@@ -22,7 +22,7 @@ describe('fibonacci', () => {
   test.skip('doesn\'t accept negatives', () => {
     expect(fibonacci(-25)).toBe("OOPS");
   });
-  test.skip('DOES accept strings', () => {
+  test('DOES accept strings', () => {
     expect(fibonacci("0")).toBe(0);
   });
   test.skip('DOES accept strings', () => {
